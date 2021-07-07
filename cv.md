@@ -34,3 +34,11 @@ const findSquares = num => {
 
 console.log(findSquares(9))
 ```
+
+**Education:**
+- [x] School (graduated with a gold medal)
+
+- [x] [Moscow School of Programmers](https://informatics.ru/) (2018-2021)
+
+**English:**
+A2. I am improving my level of English.
