@@ -1,0 +1,242 @@
+:root {
+  --head-foot: #ccebf1;
+  --main-color: #f2dce8;
+  --text-shadow: #ffffff;
+  --black-color: #000000;
+  --highlight-color: #fa0707;
+  --coral-color: #ff7f50;
+  --lightcoral-color: #f6cdd4;
+  --lightskyblue-color: #abdcfa;
+  --grey-color: #808080;
+  --skill-odd: #fccad2;
+  --skill-even: #fcd7d6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.4fr 1.1fr 1.5fr 1.5fr 0.5fr;
+  grid-template-areas: "header header" "main main" "main main" "main main" "footer footer";
+  margin: 0 auto;
+  max-width: 1440px;
+  background-image: url("./images/background.jpg");
+  background-size: cover;
+}
+
+.header {
+  grid-area: header;
+  background-color: var(--head-foot);
+}
+
+.site-header {
+  margin: 20px;
+  font-size: 100px;
+  line-height: 160px;
+  font-weight: normal;
+  text-align: center;
+  text-shadow: 2px 2px var(--text-shadow), 3px 3px var(--text-shadow);
+  color: var(--black-color);
+}
+
+.main {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.9fr 1fr 1.1fr;
+  grid-template-areas: "photo education" "photo skills" "info-about code-example";
+  grid-area: main;
+  background-color: var(--main-color);
+}
+
+.photo {
+  grid-area: photo;
+  display: flex;
+  align-items: center;
+  object-fit: contain;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.image {
+  width: auto;
+  height: 100%;
+}
+
+.info-about {
+  grid-area: info-about;
+}
+
+.name {
+  margin: 20px;
+  text-align: center;
+  font-size: 30px;
+  text-shadow: 2px 2px var(--text-shadow), 3px 3px var(--text-shadow);
+}
+
+.post {
+  text-align: center;
+  font-size: 20px;
+  text-shadow: 2px 2px var(--text-shadow), 3px 3px var(--text-shadow);
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 15px;
+}
+
+.contacts-header {
+  font-size: 25px;
+  text-shadow: 2px 2px var(--text-shadow), 3px 3px var(--text-shadow);
+}
+
+.contacts-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 10px;
+  padding: 0;
+  font-size: 20px;
+  counter-reset: li;
+  list-style-type: none;
+}
+
+.about-me {
+  margin: 15px;
+}
+
+.about-header {
+  font-size: 25px;
+  text-shadow: 2px 2px var(--text-shadow), 3px 3px var(--text-shadow);
+}
+
+.about-text {
+  padding: 30px 40px;
+  margin: 20px 40px;
+  line-height: 30px;
+  font-size: 20px;
+  border-left: 3px solid var(--lightskyblue-color);
+  color: var(--grey-color);
+}
+
+.education {
+  grid-area: education;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 70px;
+}
+
+.edu-header {
+  text-align: center;
+  font-size: 30px;
+  text-shadow: 2px 2px var(--text-shadow), 3px 3px var(--text-shadow);
+}
+
+.edu-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 10px;
+  padding: 0;
+  font-size: 25px;
+  list-style-type: none;
+}
+
+.mshp-link {
+  text-decoration: none;
+  color: var(--black-color);
+}
+
+.info-english {
+  margin: 10px;
+  font-size: 25px;
+}
+
+.skills {
+  grid-area: skills;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.skills-header {
+  text-align: center;
+  font-size: 30px;
+  text-shadow: 2px 2px var(--text-shadow), 3px 3px var(--text-shadow);
+}
+
+.skills-list {
+  padding: 10px;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 25px;
+  list-style-type: none;
+}
+
+.skills-list li {
+  padding: 10px;
+}
+
+.code-example {
+  grid-area: code-example;
+}
+
+.code-header {
+  margin: 70px 0 100px;
+  text-align: center;
+  font-size: 30px;
+  text-shadow: 2px 2px var(--text-shadow), 3px 3px var(--text-shadow);
+}
+
+.pre {
+  margin: 30px 0;
+  overflow: auto;
+  overflow-y: hidden;
+  line-height: 20px;
+  border: 4px dashed var(--lightcoral-color);
+  border-radius: 150px;
+}
+
+.code {
+  font-size: 1.4em;
+  line-height: 30px;
+}
+
+.footer {
+  grid-area: footer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  background-color: var(--head-foot);
+}
+
+.rss-logo {
+  width: 150px;
+  height: auto;
+}
+
+.github-icon {
+  width: 150px;
+  height: auto;
+}
+
+.year {
+  margin: 20px;
+  text-shadow: 2px 2px var(--text-shadow), 3px 3px var(--text-shadow);
+  text-align: center;
+  font-size: 50px;
+  line-height: 160px;
+  font-weight: normal;
+}
