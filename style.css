@@ -1,14 +1,14 @@
 :root {
-  --head-foot: #ccebf1;
   --main-color: #f2dce8;
   --black-color: #000000;
+  --white-color: #ffffff;
   --highlight-color: #fa0707;
   --coral-color: #ff7f50;
-  --lightcoral-color: #f6cdd4;
-  --lightskyblue-color: #abdcfa;
-  --grey-color: #808080;
-  --skill-odd: #fccad2;
-  --skill-even: #fcd7d6;
+  --light-color: #f4ece6;
+  --lightcoral-color: #ffdfdf;
+  --lightskyblue-color: #cce1ea;
+  --grey-color: #434C58;
+  --border-text: #8d7381;
 }
 
 * {
@@ -23,11 +23,14 @@ html {
 
 .body {
   margin: 0 auto;
+  background-image: url("./images/background-cv.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .container {
   margin: 0 auto;
-  max-width: 1480px;
+  max-width: 1440px;
   padding: 0 20px;
 }
 
@@ -36,10 +39,16 @@ html {
 }
 
 .inactive{
-  display:none;
+  display: none;
 }
 
 /* Header start */
+
+.header{
+  background-color: var(--grey-color);
+  color:var(--white-color);
+}
+
 .site-title {
   margin: 20px;
   font-size: 99px;
@@ -53,25 +62,29 @@ html {
   font-size: 20px;
 }
 
+/* Header end */
+
 .main{
   display: flex;
 }
 
 .left-side{
-  background-color: #fccad2;
+  background-color: var(--lightskyblue-color);
+  color: var(--black-color);
 }
 
 .right-side{
-  background-color: #ffffff;
+  background-color: var(--lightcoral-color);
+  color: var(--black-color);
 }
-
-/* Header end */
 
 /* Photo start */
 
 .photo-img {
   width: 280px;
   height: 100%;
+  border-radius: 130px;
+  border: 15px solid var(--lightcoral-color);
 }
 /* Photo end */
 
@@ -127,9 +140,16 @@ html {
 /* Languages end */
 
 /* About me start */
+
+.info-name{
+  text-align: center;
+
+}
+
 .name {
   margin: 20px;
   font-size: 30px;
+  text-align: center;
 }
 
 .post {
@@ -145,7 +165,7 @@ html {
   margin: 20px 40px;
   line-height: 30px;
   font-size: 20px;
-  border-left: 3px solid var(--lightskyblue-color);
+  border-left: 3px solid var(--border-text);
   color: var(--grey-color);
 }
 /* About me end */
@@ -189,6 +209,8 @@ html {
   display: flex;
   justify-content: space-between;
   padding: 0px 30px;
+  background-color: var(--grey-color);
+  color: var(--white-color);
 }
 
 .rss-logo {
