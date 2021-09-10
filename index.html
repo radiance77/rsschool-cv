@@ -14,9 +14,9 @@
 </head>
 
 <body class="body">
-<div class="container">
+    <div class="container">
         <header class="section header">
-                <h1 class="site-header">Curriculum vitae</h1>
+            <h1 class="site-header">CV</h1>
         </header>
 
         <main class="main">
@@ -27,7 +27,7 @@
                 </section>
 
                 <section class="section contacts-section">
-                    <h2 class="title contacts-title">Contacts for communication:</h2>
+                    <h2 class="title-left contacts-title">Contacts:</h2>
                     <article class="contacts">
                         <h2 class="contacts inactive">Contacts</h2>
                         <address class="contacts-comm">
@@ -41,7 +41,7 @@
                 </section>
 
                 <section class="section education-section">
-                    <h2 class="title edu-title">Education:</h2>
+                    <h2 class="title-left edu-title">Education:</h2>
                     <ul class="edu-list">
                         <li>School (graduated with a gold medal)</li>
                         <li>
@@ -52,7 +52,7 @@
                 </section>
 
                 <section class="section skills-section">
-                    <h2 class="title skills-title">Skills:</h2>
+                    <h2 class="title-left skills-title">Skills:</h2>
                     <ul class="skills-list">
                         <li>C++</li>
                         <li>Python</li>
@@ -68,9 +68,11 @@
                 </section>
 
                 <section class="section languages-section">
-                    <h2 class="title edu-title">Languages:</h2>
-                    <p class="info-languages">Russian: native</p>
-                    <p class="info-languages">English: A2. I am improving my level of English</p>
+                    <h2 class="title-left languages-title">Languages:</h2>
+                    <ul class="languages-list">
+                        <li class="info-languages"><b>Russian:</b> Native.</li>
+                        <li class="info-languages"><b>English:</b> A2. I am improving my level of English.</li>
+                    </ul>
                 </section>
 
             </div>
@@ -84,7 +86,7 @@
 
 
                     <article class="about-me">
-                        <h3 class="title about-title">About Me:</h3>
+                        <h3 class="title-right about-title">About Me:</h3>
                         <p class="about-text">
                             I am distinguished by such qualities as optimism, the ability to work in a team, the
                             willingness
@@ -98,47 +100,59 @@
 
 
                 <section class="section code-example-section">
-                    <h2 class="title code-title">Сode example:</h2>
-                    <pre class="pre">
-                <code class="code">
-        function sumTriangularNumbers(n) {
-            if(n &lt; 0){return 0;}
-            let TriangSum = 0;
-            let sum = 0;
-            for(let i = 1; i &lt;= n; i++){
-                sum += (TriangSum += i);
+                    <h2 class="title-right code-title">Сode example:</h2>
+                    <pre class="pre"><code class="code">
+            function sum(diary) {
+                let sum = 0;
+                for (let key in diary) {
+                    sum += diary[key];
+                }
+                return sum
             }
-            return sum;
-        }
-                </code>
-            </pre>
+                    
+            function whoseBicycle(diary1, diary2, diary3) {
+                let sumDiary = [sum(diary1), sum(diary2), sum(diary3)].reverse();
+                let max = Math.max(...sumDiary);
+                let son = sumDiary.indexOf(max, 0);
+                switch (son) {
+                    case 0:
+                        return 'I need to buy a bicycle for my third son.';
+                    case 1:
+                        return 'I need to buy a bicycle for my second son.';
+                    case 2:
+                        return 'I need to buy a bicycle for my first son.';
+                }
+            }</code></pre>
                 </section>
 
                 <section class="section my-projects">
-                    <h2 class="title my-projects-title">My projects:</h2>
+                    <h2 class="title-right my-projects-title">My projects:</h2>
 
                     <div class="proj-img-container">
                         <a href="https://rolling-scopes-school.github.io/radiance77-JSFEPRESCHOOL/museum/"
                             class="proj-link">
-                            <figure class="proj-img">
-                                <img src="./images/proj-museum.jpg" width="400" height="200" alt="Museum">
-                                <figcaption>Museum</figcaption>
+                            <figure>
+                                <img src="./images/proj-museum.jpg" class="proj-img" width="400" height="200"
+                                    alt="Museum">
+                                <figcaption class="proj-img-title">Museum</figcaption>
                             </figure>
                         </a>
 
                         <a href="https://rolling-scopes-school.github.io/radiance77-JSFEPRESCHOOL/vertical-slider/"
                             class="proj-link">
-                            <figure class="proj-img">
-                                <img src="./images/proj-slider.jpg" width="400" height="200" alt="Vertical slider">
-                                <figcaption>Vertical slider</figcaption>
+                            <figure>
+                                <img src="./images/proj-slider.jpg" class="proj-img" width="400" height="200"
+                                    alt="Vertical slider">
+                                <figcaption class="proj-img-title">Vertical slider</figcaption>
                             </figure>
                         </a>
 
                         <a href="https://rolling-scopes-school.github.io/radiance77-JSFEPRESCHOOL/custom-video-player/"
                             class="proj-link">
-                            <figure class="proj-img">
-                                <img src="./images/proj-player.JPG" width="400" height="200" alt="Custom video player">
-                                <figcaption>Video player</figcaption>
+                            <figure>
+                                <img src="./images/proj-player.JPG" class="proj-img" width="400" height="200"
+                                    alt="Custom video player">
+                                <figcaption class="proj-img-title">Video player</figcaption>
                             </figure>
                         </a>
                     </div>
@@ -149,15 +163,16 @@
         <footer class="section footer">
             <address class="contact-github">
                 <a class="github-link" href="https://github.com/radiance77">
-                    <img class="github-icon" alt="github-icon" src="./images/github_icon.svg" width="150" height="150">
+                    <img class="logo github-icon" alt="github-icon" src="./images/github_icon.svg" width="150"
+                        height="150">
                 </a>
             </address>
             <p class="year">2021</p>
             <a class="rsschool-link" href="https://rs.school/js/">
-                <img class="rss-logo" alt="rss-logo" src="./images/rs_school_js.svg" width="150" height="150">
+                <img class="logo rss-logo" alt="rss-logo" src="./images/rs_school_js.svg" width="150" height="150">
             </a>
         </footer>
     </div>
-    </body>
+</body>
 
 </html>

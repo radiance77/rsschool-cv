@@ -58,8 +58,12 @@ html {
   color: var(--black-color);
 }
 
-.title{
-  font-size: 20px;
+.title-left{
+  font-size: 25px;
+}
+
+.title-right{
+  font-size: 30px;
 }
 
 /* Header end */
@@ -89,6 +93,15 @@ html {
 /* Photo end */
 
 /* Contacts start */
+
+.contacts-title{
+  background-image: url("./images/contact.svg");
+  background-position: left center;
+  padding-left: 40px;
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+}
+
 .contacts-list {
   display: flex;
   flex-direction: column;
@@ -99,9 +112,22 @@ html {
   counter-reset: li;
   list-style-type: none;
 }
+
+.contacts-list li {
+  padding: 5px;
+}
 /* Contacts end */
 
 /* Education start */
+
+.edu-title{
+  background-image: url("./images/mortarboard.svg");
+  background-position: left center;
+  padding-left: 40px;
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+}
+
 .edu-list {
   display: flex;
   flex-direction: column;
@@ -112,6 +138,10 @@ html {
   list-style-type: none;
 }
 
+.edu-list li {
+  padding: 5px;
+}
+
 .mshp-link {
   text-decoration: none;
   color: var(--black-color);
@@ -119,6 +149,14 @@ html {
 /* Education end */
 
 /* Skills start */
+.skills-title{
+  background-image: url("./images/logical-thinking.svg");
+  background-position: left center;
+  padding-left: 40px;
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+}
+
 .skills-list {
   padding: 10px;
   margin-top: 10px;
@@ -132,11 +170,23 @@ html {
 /* Skills end */
 
 /* Languages start */
-.info-languages  {
-  margin: 10px;
-  font-size: 20px;
+.languages-title{
+  background-image: url("./images/language.svg");
+  background-position: left center;
+  padding-left: 40px;
+  background-size: 26px 26px;
+  background-repeat: no-repeat;
 }
 
+.languages-list  {
+  margin: 10px;
+  font-size: 20px;
+  list-style-type: none;
+}
+
+.info-languages{
+  padding: 5px;
+}
 /* Languages end */
 
 /* About me start */
@@ -148,7 +198,7 @@ html {
 
 .name {
   margin: 20px;
-  font-size: 30px;
+  font-size: 40px;
   text-align: center;
 }
 
@@ -184,7 +234,7 @@ html {
 }
 
 .code {
-  font-size: 1.4em;
+  font-size: 20px;
   line-height: 30px;
 } 
 /* Code example end */
@@ -199,8 +249,27 @@ html {
   margin-top: 28px;
 }
 
+.proj-img{
+  filter: brightness(50%);
+  transition: 1s; 
+}
+
+.proj-img:hover {
+  filter: brightness(100%);
+}
+
 .proj-link {
+  color: var(--black-color);
   text-decoration: none;
+}
+
+.proj-link:hover {
+  color: var(--grey-color);
+  text-decoration: none;
+}
+
+.proj-img-title{
+  text-align: center;
 }
 /* My projects end */
 
@@ -217,12 +286,18 @@ html {
   width: 150px;
   height: auto;
   margin-top: 72px;
+  transition: 1s;
 }
 
 .github-icon {
   width: 150px;
   height: auto;
   margin-top: 20px;
+  transition: 1s;
+}
+
+.logo:hover{
+  transform: rotate(360deg); 
 }
 
 .year {
