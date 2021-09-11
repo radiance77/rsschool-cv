@@ -16,7 +16,33 @@
 <body class="body">
     <div class="container">
         <header class="section header">
-            <h1 class="site-header">CV</h1>
+            <h1 class="site-header">Curriculum vitae</h1>
+
+            <nav class="header-nav">
+                <ul class="header-list">
+                    <li class="header-item">
+                        <a href="#contacts" class="nav-link header-link">Contacts</a>
+                    </li>
+                    <li class="header-item">
+                        <a href="#education" class="nav-link header-link">Education</a>
+                    </li>
+                    <li class="header-item">
+                        <a href="#skills" class="nav-link header-link">Skills</a>
+                    </li>
+                    <li class="header-item">
+                        <a href="#languages" class="nav-link header-link">Languages</a>
+                    </li>
+                    <li class="header-item">
+                        <a href="#info-about" class="nav-link header-link">About Me</a>
+                    </li>
+                    <li class="header-item">
+                        <a href="#code-example" class="nav-link header-link">Code example</a>
+                    </li>
+                    <li class="header-item">
+                        <a href="#my-projects" class="nav-link header-link">My projects</a>
+                    </li>
+                </ul>
+            </nav>
         </header>
 
         <main class="main">
@@ -26,23 +52,25 @@
                     <img class="photo-img" src="./images/photo.jpg" alt="My photo" width="100" height="100">
                 </section>
 
-                <section class="section contacts-section">
+                <section class="section contacts-section" id="contacts">
                     <h2 class="title-left contacts-title">Contacts:</h2>
                     <article class="contacts">
                         <h2 class="contacts inactive">Contacts</h2>
                         <address class="contacts-comm">
-                            <ul class="contacts-list">
-                                <li>Phone: +77771471030</li>
+                            <ul class="contacts-list list-resp">
+                                <li>Telegram: <a class="contact-link" href="https://t.me/angel_sunflower777"
+                                        target="_blank">t.me/angel_sunflower777</a></li>
                                 <li>Email: floresangela.0707@gmail.com</li>
-                                <li>GitHub: @radiance77</li>
+                                <li>GitHub: <a class="contact-link" href="https://github.com/radiance77">@radiance77</a>
+                                </li>
                             </ul>
                         </address>
                     </article>
                 </section>
 
-                <section class="section education-section">
+                <section class="section education-section" id="education">
                     <h2 class="title-left edu-title">Education:</h2>
-                    <ul class="edu-list">
+                    <ul class="edu-list list-resp">
                         <li>School (graduated with a gold medal)</li>
                         <li>
                             <a class="mshp-link" href="https://informatics.ru/">Moscow School of Programmers
@@ -51,9 +79,9 @@
                     </ul>
                 </section>
 
-                <section class="section skills-section">
+                <section class="section skills-section" id="skills">
                     <h2 class="title-left skills-title">Skills:</h2>
-                    <ul class="skills-list">
+                    <ul class="skills-list list-resp">
                         <li>C++</li>
                         <li>Python</li>
                         <li>JavaScript</li>
@@ -68,8 +96,8 @@
                 </section>
 
                 <section class="section languages-section">
-                    <h2 class="title-left languages-title">Languages:</h2>
-                    <ul class="languages-list">
+                    <h2 class="title-left languages-title" id="languages">Languages:</h2>
+                    <ul class="languages-list list-resp">
                         <li class="info-languages"><b>Russian:</b> Native.</li>
                         <li class="info-languages"><b>English:</b> A2. I am improving my level of English.</li>
                     </ul>
@@ -78,7 +106,7 @@
             </div>
 
             <div class="right-side">
-                <section class="section info-about-section">
+                <section class="section info-about-section" id="info-about">
                     <div class="info-name">
                         <h2 class="name">Altukhova Angelina</h2>
                         <h3 class="post">Junior developer</h3>
@@ -99,33 +127,34 @@
                 </section>
 
 
-                <section class="section code-example-section">
+                <section class="section code-example-section" id="code-example">
                     <h2 class="title-right code-title">Сode example:</h2>
                     <pre class="pre"><code class="code">
-            function sum(diary) {
-                let sum = 0;
-                for (let key in diary) {
-                    sum += diary[key];
-                }
-                return sum
-            }
+                 function sum(diary) {
+                    let sum = 0;
+                    for (let key in diary) {
+                        sum += diary[key];
+                    }
+                    return sum
+                 }
                     
-            function whoseBicycle(diary1, diary2, diary3) {
-                let sumDiary = [sum(diary1), sum(diary2), sum(diary3)].reverse();
-                let max = Math.max(...sumDiary);
-                let son = sumDiary.indexOf(max, 0);
-                switch (son) {
-                    case 0:
-                        return 'I need to buy a bicycle for my third son.';
-                    case 1:
-                        return 'I need to buy a bicycle for my second son.';
-                    case 2:
-                        return 'I need to buy a bicycle for my first son.';
+                function whoseBicycle(diary1, diary2, diary3) {
+                    let sumDiary = [sum(diary1), sum(diary2), sum(diary3)].reverse();
+                    let max = Math.max(...sumDiary);
+                    let son = sumDiary.indexOf(max, 0);
+                    switch (son) {
+                        case 0:
+                            return 'I need to buy a bicycle for my third son.';
+                        case 1:
+                            return 'I need to buy a bicycle for my second son.';
+                        case 2:
+                            return 'I need to buy a bicycle for my first son.';
+                    }
                 }
-            }</code></pre>
+    </code></pre>
                 </section>
 
-                <section class="section my-projects">
+                <section class="section my-projects" id="my-projects">
                     <h2 class="title-right my-projects-title">My projects:</h2>
 
                     <div class="proj-img-container">
