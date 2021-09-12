@@ -6,7 +6,7 @@
   --coral-color: #ff7f50;
   --light-color: #f4ece6;
   --lightcoral-color: #ffdfdf;
-  --lightskyblue-color: #cce1ea;
+  --lightskyblue-color: #c9ecfb;
   --grey-color: #434C58;
   --border-text: #8d7381;
 }
@@ -35,7 +35,7 @@ html {
 }
 
 .section{
-  padding: 30px;
+  padding: 30px 0;
 }
 
 .inactive{
@@ -58,7 +58,7 @@ html {
 .header-list {
   display: flex;
   flex-wrap: wrap;
-  margin-left: 50px;
+  margin-left: 72px;
 }
 
 .header-item {
@@ -73,7 +73,7 @@ html {
 .nav-link {
   font-style: normal;
   font-weight: 200;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 50px;
   text-decoration: none;
   letter-spacing: 2px;
@@ -96,17 +96,29 @@ html {
 /* Header end */
 
 .main{
-  display: flex;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  justify-items: center;
 }
 
 .left-side{
   background-color: var(--lightskyblue-color);
   color: var(--black-color);
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 100%;
 }
 
 .right-side{
   background-color: var(--lightcoral-color);
   color: var(--black-color);
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 100%;
 }
 
 /* Photo start */
@@ -114,7 +126,7 @@ html {
 .photo-img {
   width: 100%;
   height: 100%;
-  border-radius: 130px;
+  object-fit: cover;
   border: 15px solid var(--lightcoral-color);
 }
 /* Photo end */
@@ -219,15 +231,14 @@ html {
 }
 
 .languages-list  {
-  margin: 10px;
   font-size: 20px;
   list-style-type: none;
-  white-space: pre-wrap;
 }
 
-.info-languages{
-  padding: 5px;
+.languages-list  li {
+  padding: 10px;
 }
+
 /* Languages end */
 
 /* About me start */
@@ -248,7 +259,7 @@ html {
 }
 
 .about-me {
-  margin: 10pxpx;
+  margin: 10px;
 }
 
 .about-text {
@@ -289,8 +300,9 @@ html {
 .proj-img-container{
   display: flex;
   flex-wrap: wrap;
-  column-gap: 60px;
-  row-gap: 77px;
+  justify-content: center;
+  column-gap: 20px;
+  row-gap: 30px;
   margin-top: 28px;
 }
 
@@ -366,12 +378,6 @@ html {
   } 
  }
 
- @media screen and (max-device-width: 1042px) {
-  .code {
-    font-size: 10px;
-  } 
- }
-
  @media screen and (max-device-width: 1012px) {
   .rss-logo {
     width: 130px;
@@ -379,22 +385,23 @@ html {
   
   .github-icon {
     width: 130px;
+    margin-top: 35px;
   }
 
-  .code {
-    font-size: 9px;
-  } 
-
   .title-left{
-    font-size: 19px;
+    font-size: 23px;
   }
   
   .title-right{
-    font-size: 19px;
+    font-size: 23px;
   }
 
   .list-resp{
     font-size: 14px;
+  }
+
+  .skills-title{
+    background-size: 28px 30px;
   }
 
   .proj-img{
@@ -415,66 +422,194 @@ html {
   }
 
   .photo-img{
-    width: 200px;
-    border-radius: 130px;
+    width: 230px;
     border: 11px solid var(--lightcoral-color);
   }
-  
  }
 
- @media screen and (max-device-width: 870px) {
+  @media screen and (max-device-width: 870px) {
 
-  .nav-link {
-    font-size: 15px;
+  .rss-logo {
+    width: 110px;
   }
-
-  .code {
-    font-size: 8px;
-  } 
-
-  .about-text {
-    font-size: 15px;
-  }
- }
-
- @media screen and (max-device-width: 848px) {
-  .code {
-    font-size: 6px;
-  } 
- }
-
- @media screen and (max-device-width: 780px) {
-
-  .site-header{
-    font-size: 30px;
+    
+  .github-icon {
+    width: 110px;
   }
 
   .year {
     font-size: 40px;
-    margin-top: 5px;
+  }
+
+  .main {
+    grid-template-columns: 1fr;
+  } 
+
+  .left-side{
+    align-items: flex-start;
+    padding-left: 200px;
+  }
+
+
+  .skills-list{
+    column-count: 4;
+    margin-top: 2px;
+  }
+
+  .photo-section{
+    margin-left: -200px;
+    align-self: center;
+  }
+
+  .title-left{
+    font-size: 23px;
+  }
+ }
+
+ @media screen and (max-device-width: 700px) {
+
+  .left-side{
+    padding-left: 140px;
+  }
+
+  .photo-section{
+    margin-left: -140px;
+  }
+ }
+
+ @media screen and (max-device-width: 580px) {
+  .left-side{
+    padding-left: 100px;
+  }
+
+  .photo-section{
+    margin-left: -100px;
+  }
+ }
+
+ @media screen and (max-device-width: 508px) {
+  .code {
+    font-size: 11px;
+  } 
+
+  .left-side{
+    padding-left: 70px;
+  }
+
+  .photo-section{
+    margin-left: -70px;
+  }
+  
+  .rss-logo {
+    width: 100px;
+  }
+    
+  .github-icon {
+    width: 90px;
+    margin-top: 45px;
+  }
+
+  .year {
+    font-size: 20px;
+  }
+ }
+
+
+ @media screen and (max-device-width: 480px) { 
+
+  .left-side{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  .right-side{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .left-side{
+    padding-left: 10px;
+  }
+
+  .photo-section{
+    margin-left: -10px;
+  }
+
+  .about-text {
+    margin: 20px 0px;
+  }
+ }
+
+ @media screen and (max-device-width: 440px) {
+   .site-header{
+     text-align: center;
+     margin-bottom: 15px;
+     font-size: 40px;
+   }
+
+  .rss-logo {
+    width: 90px;
+  }
+    
+  .github-icon {
+    width: 80px;
+    margin-top: 45px;
+  }
+
+  .year {
+    font-size: 15px;
+  }
+ }
+
+ @media screen and (max-device-width: 408px) {
+  .code {
+    font-size: 9px;
+  } 
+ }
+
+ @media screen and (max-device-width: 400px) {
+
+  .left-side{
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  
+  .right-side{
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .left-side{
+    padding-left: 5px;
+  }
+
+  .photo-section{
+    margin-left: -5px;
+  }
+
+  .about-text {
+    margin: 20px -5px;
   }
 
   .rss-logo {
-    width: 120px;
+    width: 80px;
+    margin-top: 90px;
   }
-  
+    
   .github-icon {
-    width: 120px;
+    width: 70px;
+    margin-top: 70px;
   }
 
-  .code {
-    font-size: 6px;
-  } 
+  .year {
+    font-size: 15px;
+  }
 
   .proj-img{
     width: 250px;
     height: 150px;
   }
 
-  .about-text {
-    font-size: 10px;
-  }
-
   .title-left{
     font-size: 17px;
   }
@@ -484,6 +619,10 @@ html {
   }
 
   .list-resp{
+    font-size: 10px;
+  }
+
+  .about-text {
     font-size: 12px;
   }
 
@@ -492,120 +631,25 @@ html {
   }
 
   .post{
-    font-size: 12px;
+    font-size: 10px;
   }
 
-  .photo-img{
-    width: 150px;
-    border-radius: 130px;
-    border: 11px solid var(--lightcoral-color);
+  .contacts-title{
+    background-size: 24px 30px;
   }
+  
+  .edu-title{
+    background-size: 24px 30px;
+  }
+
+  .skills-title{
+    background-size: 22px 30px;
+  }
+  
+  .languages-title{
+    background-size: 20px 26px;
+  }
+  
+
  }
 
- @media screen and (max-device-width: 685px) {
-
-  .year {
-    font-size: 30px;
-  }
-
-  .rss-logo {
-    width: 100px;
-  }
-  
-  .github-icon {
-    width: 100px;
-    margin-top: 41px;
-  }
-
-  .title-left{
-    font-size: 15px;
-  }
-  
-  .title-right{
-    font-size: 15px;
-  }
-
-  .list-resp{
-    font-size: 10px;
-  }
-
-  .proj-img{
-    width: 250px;
-    height: 130px;
-  }
-
-  .about-text {
-    font-size: 10px;
-  }
-
-  .name{
-    font-size: 15px;
-  }
-
-  .post{
-    font-size: 10px;
-  }
-
-  .photo-img{
-    width: 120px;
-    border-radius: 130px;
-    border: 11px solid var(--lightcoral-color);
-  }
-  
- }
-
- @media screen and (max-device-width: 656px) {
-
-  .title-left{
-    font-size: 13px;
-  }
-  
-  .title-right{
-    font-size: 13px;
-  }
-
-  .list-resp{
-    font-size: 10px;
-  }
-
-  .proj-img{
-    width: 250px;
-    height: 130px;
-  }
-
-  .about-text {
-    font-size: 10px;
-  }
-
-  .name{
-    font-size: 13px;
-  }
-
-  .post{
-    font-size: 10px;
-  }
-
-  .photo-img{
-    width: 115px;
-    border-radius: 130px;
-    border: 8px solid var(--lightcoral-color);
-  }
-  
- }
-
- @media screen and (max-device-width: 685px) {
-
-  .year {
-    font-size: 20px;
-  }
-
-  .rss-logo {
-    width: 70px;
-  }
-  
-  .github-icon {
-    width: 70px;
-    margin-top: 40px;
-  }
-
- }

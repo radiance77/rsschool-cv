@@ -130,27 +130,36 @@
                 <section class="section code-example-section" id="code-example">
                     <h2 class="title-right code-title">Сode example:</h2>
                     <pre class="pre"><code class="code">
-                 function sum(diary) {
-                    let sum = 0;
-                    for (let key in diary) {
-                        sum += diary[key];
-                    }
-                    return sum
-                 }
-                    
-                function whoseBicycle(diary1, diary2, diary3) {
-                    let sumDiary = [sum(diary1), sum(diary2), sum(diary3)].reverse();
-                    let max = Math.max(...sumDiary);
-                    let son = sumDiary.indexOf(max, 0);
-                    switch (son) {
-                        case 0:
-                            return 'I need to buy a bicycle for my third son.';
-                        case 1:
-                            return 'I need to buy a bicycle for my second son.';
-                        case 2:
-                            return 'I need to buy a bicycle for my first son.';
-                    }
-                }
+
+
+    function indexEqualsValue(arr) {
+        let start = 0;
+        let middle = 0;
+        let end = arr.length;
+        let array = [];
+                          
+        while(end - start > 1) {
+            middle = Math.floor((start + end) / 2)
+            if (arr[middle] === middle) {
+                array.push(middle);
+                end = middle;
+            } else if (arr[middle] > middle) {
+                end = middle;
+            } else if (arr[middle] &lt; middle) {
+                start = middle;
+            }
+        }
+                            
+        if (arr[0] === 0) {
+            return 0;
+        }
+                          
+        if(array.length > 0) {
+            return Math.min(...array);
+        }else{
+            return -1;
+        }
+    }
     </code></pre>
                 </section>
 
