@@ -7,7 +7,7 @@
   --light-color: #f4ece6;
   --lightcoral-color: #ffdfdf;
   --lightskyblue-color: #c9ecfb;
-  --grey-color: #434C58;
+  --grey-color: #434c58;
   --border-text: #8d7381;
 }
 
@@ -34,22 +34,22 @@ html {
   padding: 0 20px;
 }
 
-.section{
+.section {
   padding: 30px 0;
 }
 
-.inactive{
+.inactive {
   display: none;
 }
 
 /* Header start */
 
-.header{
+.header {
   background-color: var(--grey-color);
-  color:var(--white-color);
+  color: var(--white-color);
 }
 
-.site-header{
+.site-header {
   text-align: center;
   margin-bottom: 15px;
   font-size: 50px;
@@ -80,12 +80,13 @@ html {
   color: var(--white-color);
 }
 
-.nav-link:hover, .nav-link:active {
+.nav-link:hover,
+.nav-link:active {
   color: var(--black-color);
   transition: 1s;
 }
 
-.header-burger{
+.header-burger {
   display: none;
   width: 40px;
   height: 28px;
@@ -93,7 +94,7 @@ html {
   margin-left: 20px;
 }
 
-.burger-line{
+.burger-line {
   display: block;
   width: 100%;
   height: 2px;
@@ -102,36 +103,39 @@ html {
   left: 0;
 }
 
-.burger-line-first{
-  top:0;
+.burger-line-first {
+  top: 0;
 }
 
-.burger-line-second{
+.burger-line-second {
   top: 50%;
   transform: translateY(-50%);
 }
 
-.burger-line-third{
+.burger-line-third {
   bottom: 0;
 }
 
-.title-left{
+.title-left {
   font-size: 25px;
 }
 
-.title-right{
+.title-right {
   font-size: 30px;
 }
 
+.mark-text {
+  background-color: var(--lightcoral-color);
+}
 /* Header end */
 
-.main{
+.main {
   display: grid;
   grid-template-columns: 30% 70%;
   justify-items: center;
 }
 
-.left-side{
+.left-side {
   background-color: var(--lightskyblue-color);
   color: var(--black-color);
   display: flex;
@@ -141,7 +145,7 @@ html {
   width: 100%;
 }
 
-.right-side{
+.right-side {
   background-color: var(--lightcoral-color);
   color: var(--black-color);
   display: flex;
@@ -153,7 +157,7 @@ html {
 
 /* Photo start */
 
-.photo-section{
+.photo-section {
   display: flex;
   align-self: center;
 }
@@ -168,7 +172,7 @@ html {
 
 /* Contacts start */
 
-.contacts-title{
+.contacts-title {
   background-image: url("./images/contact.svg");
   background-position: left center;
   padding-left: 40px;
@@ -191,19 +195,20 @@ html {
   padding: 5px;
 }
 
-.contact-link{
+.contact-link {
   text-decoration: none;
   color: var(--black-color);
 }
 
-.contact-link:hover, .contact-link:active{
+.contact-link:hover,
+.contact-link:active {
   color: var(--grey-color);
 }
 /* Contacts end */
 
 /* Education start */
 
-.edu-title{
+.edu-title {
   background-image: url("./images/mortarboard.svg");
   background-position: left center;
   padding-left: 40px;
@@ -230,13 +235,14 @@ html {
   color: var(--black-color);
 }
 
-.mshp-link:hover, .mshp-link:active{
+.mshp-link:hover,
+.mshp-link:active {
   color: var(--grey-color);
 }
 /* Education end */
 
 /* Skills start */
-.skills-title{
+.skills-title {
   background-image: url("./images/logical-thinking.svg");
   background-position: left center;
   padding-left: 40px;
@@ -257,7 +263,7 @@ html {
 /* Skills end */
 
 /* Languages start */
-.languages-title{
+.languages-title {
   background-image: url("./images/language.svg");
   background-position: left center;
   padding-left: 40px;
@@ -265,12 +271,12 @@ html {
   background-repeat: no-repeat;
 }
 
-.languages-list  {
+.languages-list {
   font-size: 20px;
   list-style-type: none;
 }
 
-.languages-list  li {
+.languages-list li {
   padding: 10px;
 }
 
@@ -278,7 +284,7 @@ html {
 
 /* About me start */
 
-.info-name{
+.info-name {
   text-align: center;
   width: 100%;
 }
@@ -327,12 +333,11 @@ html {
 .code {
   font-size: 15px;
   line-height: 30px;
-} 
+}
 /* Code example end */
 
-
 /* My projects start */
-.proj-img-container{
+.proj-img-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -341,9 +346,9 @@ html {
   margin-top: 28px;
 }
 
-.proj-img{
+.proj-img {
   filter: brightness(50%);
-  transition: 1s; 
+  transition: 1s;
 }
 
 .proj-img:hover {
@@ -355,12 +360,13 @@ html {
   text-decoration: none;
 }
 
-.proj-link:hover, .proj-link:active {
+.proj-link:hover,
+.proj-link:active {
   color: var(--grey-color);
   text-decoration: none;
 }
 
-.proj-img-title{
+.proj-img-title {
   text-align: center;
 }
 /* My projects end */
@@ -388,8 +394,8 @@ html {
   transition: 1s;
 }
 
-.logo:hover{
-  transform: rotate(360deg); 
+.logo:hover {
+  transform: rotate(360deg);
 }
 
 .year {
@@ -404,42 +410,42 @@ html {
 @media screen and (max-device-width: 1440px) {
   .code {
     font-size: 15px;
-  } 
- }
+  }
+}
 
- @media screen and (max-device-width: 1204px) {
+@media screen and (max-device-width: 1204px) {
   .code {
     font-size: 12px;
-  } 
- }
+  }
+}
 
- @media screen and (max-device-width: 1012px) {
+@media screen and (max-device-width: 1012px) {
   .rss-logo {
     width: 130px;
   }
-  
+
   .github-icon {
     width: 130px;
     margin-top: 35px;
   }
 
-  .title-left{
-    font-size: 23px;
-  }
-  
-  .title-right{
+  .title-left {
     font-size: 23px;
   }
 
-  .list-resp{
+  .title-right {
+    font-size: 23px;
+  }
+
+  .list-resp {
     font-size: 14px;
   }
 
-  .skills-title{
+  .skills-title {
     background-size: 28px 30px;
   }
 
-  .proj-img{
+  .proj-img {
     width: 300px;
     height: 150px;
   }
@@ -448,26 +454,25 @@ html {
     font-size: 17px;
   }
 
-  .name{
+  .name {
     font-size: 20px;
   }
 
-  .post{
+  .post {
     font-size: 14px;
   }
 
-  .photo-img{
+  .photo-img {
     width: 230px;
     border: 11px solid var(--lightcoral-color);
   }
- }
+}
 
-  @media screen and (max-device-width: 870px) {
-
+@media screen and (max-device-width: 870px) {
   .rss-logo {
     width: 110px;
   }
-    
+
   .github-icon {
     width: 110px;
   }
@@ -478,14 +483,14 @@ html {
 
   .main {
     grid-template-columns: 1fr;
-  } 
+  }
 
-  .header-burger{
+  .header-burger {
     display: block;
     cursor: pointer;
   }
 
-  .header-nav{
+  .header-nav {
     width: 100%;
     height: 100%;
     position: fixed;
@@ -494,32 +499,32 @@ html {
     background-color: var(--grey-color);
     z-index: 10;
     transform: translateX(100%);
-    transition: .7s linear;
+    transition: 0.7s linear;
   }
 
-  .header-nav-active{
+  .header-nav-active {
     transform: translateX(0);
   }
 
-  .header-item{
+  .header-item {
     width: 100%;
     margin-right: 0;
     margin-bottom: 10px;
   }
 
-  .header-item:first-child{
-    margin-top: 50px;;
+  .header-item:first-child {
+    margin-top: 50px;
   }
 
-  .header-item:last-child{
-    margin-bottom: 0px;;
+  .header-item:last-child {
+    margin-bottom: 0px;
   }
 
   .nav-link {
     font-size: 30px;
   }
 
-  .header-close-nav{
+  .header-close-nav {
     width: 5px;
     position: absolute;
     top: 20px;
@@ -528,9 +533,9 @@ html {
     margin-right: 17px;
     margin-top: 15px;
     cursor: pointer;
-}
+  }
 
-  .header-close-nav-line{
+  .header-close-nav-line {
     width: 100%;
     display: block;
     height: 30px;
@@ -539,74 +544,71 @@ html {
     top: 50%;
   }
 
-  .header-close-nav-line:first-child{
+  .header-close-nav-line:first-child {
     transform: translateY(-50%) rotate(45deg);
   }
 
-  .header-close-nav-line:last-child{
+  .header-close-nav-line:last-child {
     transform: translateY(-50%) rotate(-45deg);
   }
 
-
-  .left-side{
+  .left-side {
     align-items: flex-start;
     padding-left: 200px;
   }
 
-
-  .skills-list{
+  .skills-list {
     column-count: 4;
     margin-top: 2px;
   }
 
-  .photo-section{
+  .photo-section {
     margin-left: -200px;
     align-self: center;
   }
 
-  .title-left{
+  .title-left {
     font-size: 23px;
   }
- }
+}
 
- @media screen and (max-device-width: 700px) {
-
-  .left-side{
+@media screen and (max-device-width: 700px) {
+  .left-side {
     padding-left: 140px;
   }
 
-  .photo-section{
+  .photo-section {
     margin-left: -140px;
   }
- }
+}
 
- @media screen and (max-device-width: 580px) {
-  .left-side{
+@media screen and (max-device-width: 580px) {
+  .left-side {
     padding-left: 100px;
   }
 
-  .photo-section{
+  .photo-section {
     margin-left: -100px;
   }
- }
+}
 
- @media screen and (max-device-width: 508px) {
+@media screen and (max-device-width: 508px) {
   .code {
     font-size: 11px;
-  } 
+  }
 
-  .left-side{
+  .left-side {
     padding-left: 70px;
   }
 
-  .photo-section{
+  .photo-section {
     margin-left: -70px;
   }
-  
+
   .rss-logo {
     width: 100px;
   }
-    
+
   .github-icon {
     width: 90px;
     margin-top: 45px;
@@ -615,45 +617,43 @@ html {
   .year {
     font-size: 20px;
   }
- }
+}
 
-
- @media screen and (max-device-width: 480px) { 
-
-  .left-side{
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-  
-  .right-side{
+@media screen and (max-device-width: 480px) {
+  .left-side {
     padding-left: 10px;
     padding-right: 10px;
   }
 
-  .left-side{
+  .right-side {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .left-side {
     padding-left: 10px;
   }
 
-  .photo-section{
+  .photo-section {
     margin-left: -10px;
   }
 
   .about-text {
     margin: 20px 0px;
   }
- }
+}
 
- @media screen and (max-device-width: 440px) {
-   .site-header{
-     text-align: center;
-     margin-bottom: 15px;
-     font-size: 35px;
-   }
+@media screen and (max-device-width: 440px) {
+  .site-header {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 35px;
+  }
 
   .rss-logo {
     width: 90px;
   }
-    
+
   .github-icon {
     width: 80px;
     margin-top: 45px;
@@ -662,31 +662,30 @@ html {
   .year {
     font-size: 15px;
   }
- }
+}
 
- @media screen and (max-device-width: 408px) {
+@media screen and (max-device-width: 408px) {
   .code {
     font-size: 9px;
-  } 
- }
-
- @media screen and (max-device-width: 400px) {
-
-  .left-side{
-    padding-left: 5px;
-    padding-right: 5px;
   }
-  
-  .right-side{
+}
+
+@media screen and (max-device-width: 400px) {
+  .left-side {
     padding-left: 5px;
     padding-right: 5px;
   }
 
-  .left-side{
+  .right-side {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .left-side {
     padding-left: 5px;
   }
 
-  .photo-section{
+  .photo-section {
     margin-left: -5px;
   }
 
@@ -698,7 +697,7 @@ html {
     width: 80px;
     margin-top: 90px;
   }
-    
+
   .github-icon {
     width: 70px;
     margin-top: 70px;
@@ -708,20 +707,20 @@ html {
     font-size: 15px;
   }
 
-  .proj-img{
+  .proj-img {
     width: 250px;
     height: 150px;
   }
 
-  .title-left{
-    font-size: 17px;
-  }
-  
-  .title-right{
+  .title-left {
     font-size: 17px;
   }
 
-  .list-resp{
+  .title-right {
+    font-size: 17px;
+  }
+
+  .list-resp {
     font-size: 10px;
   }
 
@@ -729,30 +728,27 @@ html {
     font-size: 12px;
   }
 
-  .name{
+  .name {
     font-size: 17px;
   }
 
-  .post{
+  .post {
     font-size: 10px;
   }
 
-  .contacts-title{
-    background-size: 24px 30px;
-  }
-  
-  .edu-title{
+  .contacts-title {
     background-size: 24px 30px;
   }
 
-  .skills-title{
+  .edu-title {
+    background-size: 24px 30px;
+  }
+
+  .skills-title {
     background-size: 22px 30px;
   }
-  
-  .languages-title{
+
+  .languages-title {
     background-size: 20px 26px;
   }
-  
-
- }
-
+}
