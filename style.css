@@ -1,5 +1,5 @@
 :root {
-  --main-color: #f2dce8;
+  --main-color: #f9d2d2;
   --black-color: #000000;
   --white-color: #ffffff;
   --highlight-color: #fa0707;
@@ -7,6 +7,7 @@
   --light-color: #f4ece6;
   --lightcoral-color: #ffdfdf;
   --lightskyblue-color: #c9ecfb;
+  --blue-color: #38bff8;
   --grey-color: #434c58;
   --border-text: #8d7381;
 }
@@ -129,7 +130,7 @@ html {
 }
 /* Header end */
 
-.main {
+.container-main {
   display: grid;
   grid-template-columns: 30% 70%;
   justify-items: center;
@@ -150,6 +151,14 @@ html {
   color: var(--black-color);
   display: flex;
   flex-direction: column;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 100%;
+}
+
+.my-projects {
+  background-color: var(--lightskyblue-color);
+  color: var(--black-color);
   padding-left: 30px;
   padding-right: 30px;
   width: 100%;
@@ -337,18 +346,22 @@ html {
 /* Code example end */
 
 /* My projects start */
+
 .proj-img-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   column-gap: 20px;
-  row-gap: 30px;
-  margin-top: 28px;
+  row-gap: 100px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .proj-img {
-  filter: brightness(50%);
+  filter: brightness(80%);
   transition: 1s;
+  width: 100%;
+  height: auto;
 }
 
 .proj-img:hover {
@@ -366,9 +379,20 @@ html {
   text-decoration: none;
 }
 
-.proj-img-title {
+.proj-img-desc {
   text-align: center;
+  font-size: 30px;
+  background-color: var(--lightcoral-color);
+  margin-top: -5px;
+  padding: 20px;
 }
+
+.about-proj {
+  font-size: 25px;
+  margin-top: 20px;
+  line-height: 35px;
+}
+
 /* My projects end */
 
 /* Footer start */
@@ -420,6 +444,14 @@ html {
 }
 
 @media screen and (max-device-width: 1012px) {
+  .proj-img-desc {
+    font-size: 25px;
+  }
+
+  .about-proj {
+    font-size: 20px;
+  }
+
   .rss-logo {
     width: 130px;
   }
@@ -443,11 +475,6 @@ html {
 
   .skills-title {
     background-size: 28px 30px;
-  }
-
-  .proj-img {
-    width: 300px;
-    height: 150px;
   }
 
   .about-text {
@@ -481,7 +508,7 @@ html {
     font-size: 40px;
   }
 
-  .main {
+  .container-main {
     grid-template-columns: 1fr;
   }
 
@@ -583,6 +610,14 @@ html {
 }
 
 @media screen and (max-device-width: 580px) {
+  .proj-img-desc {
+    font-size: 18px;
+  }
+
+  .about-proj {
+    font-size: 14px;
+  }
+
   .left-side {
     padding-left: 100px;
   }
@@ -705,11 +740,6 @@ html {
 
   .year {
     font-size: 15px;
-  }
-
-  .proj-img {
-    width: 250px;
-    height: 150px;
   }
 
   .title-left {
