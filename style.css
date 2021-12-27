@@ -59,7 +59,8 @@ html {
 .header-list {
   display: flex;
   flex-wrap: wrap;
-  margin-left: 72px;
+  justify-content: space-around;
+  padding: 5px 15px;
 }
 
 .header-item {
@@ -361,7 +362,7 @@ html {
   filter: brightness(80%);
   transition: 1s;
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 .proj-img:hover {
