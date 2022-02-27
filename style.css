@@ -543,8 +543,14 @@ body::-webkit-scrollbar-thumb {
   gap: 30px;
 }
 
-.certificate-img {
+.certificate-img-container {
   max-width: 600px;
+}
+
+.certificate-img {
+  width: 100%;
+  aspect-ratio: 5/3;
+  border: 2px solid var(--black);
 }
 /* Education end */
 
