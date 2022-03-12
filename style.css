@@ -525,7 +525,7 @@ body::-webkit-scrollbar-thumb {
   align-items: center;
   margin: 0 auto;
   grid-gap: 1rem;
-  grid-template-columns: repeat(2, minmax(245px, 1fr));
+  grid-template-columns: repeat(3, minmax(245px, 1fr));
   background: rgba(255, 255, 255, 0.3);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -953,6 +953,13 @@ body::-webkit-scrollbar-thumb {
     margin: 0 auto;
     grid-gap: 1rem;
     grid-template-columns: repeat(3, minmax(265px, 1fr));
+  }
+}
+
+@media (max-width: 1200px) {
+  .certificates-cards {
+    padding: 10px;
+    grid-template-columns: repeat(2, minmax(245px, 1fr));
   }
 }
 
