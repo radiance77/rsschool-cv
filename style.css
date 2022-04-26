@@ -609,6 +609,10 @@ body::-webkit-scrollbar-thumb {
   background-image: url('./assets/img/css.png');
 }
 
+.skills-sass {
+  background-image: url('./assets/img/sass.png');
+}
+
 .skills-figma {
   background-image: url('./assets/img/figma.png');
 }
