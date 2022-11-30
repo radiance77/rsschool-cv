@@ -596,6 +596,10 @@ body::-webkit-scrollbar-thumb {
   transform: rotate(360deg);
 }
 
+.skills-angular {
+  background-image: url('./assets/img/angular.png');
+}
+
 .skills-ts {
   background-image: url('./assets/img/ts.png');
 }
