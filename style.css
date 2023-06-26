@@ -391,6 +391,7 @@ body::-webkit-scrollbar-thumb {
   line-height: 179.8%;
   color: var(--black);
   width: 70%;
+  text-align: center;
 }
 
 /* About me end */
