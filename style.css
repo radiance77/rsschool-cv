@@ -601,6 +601,12 @@ body::-webkit-scrollbar-thumb {
   background-image: url("./assets/img/angular.png");
 }
 
+.skills-gsap {
+  background-image: url("./assets/img/gsap-logo.png");
+  height: 81px;
+  width: 69px;
+}
+
 .skills-ts {
   background-image: url("./assets/img/ts.png");
 }
