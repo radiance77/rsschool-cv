@@ -715,7 +715,14 @@ body::-webkit-scrollbar-thumb {
   grid-template-columns: repeat(4, minmax(300px, 1fr));
 }
 
-.proj-link {
+.proj-text-link {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 30px;
+  color: var(--black);
+  transition: 0.7s;
 }
 
 .project-card-container {
@@ -735,6 +742,52 @@ body::-webkit-scrollbar-thumb {
   -webkit-backdrop-filter: blur(5px);
   border: 3px solid rgba(255, 255, 255, 0.3);
   transition: 0.5s;
+}
+
+.projects-card-collab {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 400px;
+  height: 100%;
+  background-color: var(--white);
+  border-radius: 5%;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  transition: 0.5s;
+}
+
+.proj-text {
+  width: 100%;
+  padding: 0 10px;
+  padding-top: 10px;
+}
+
+.proj-collab-text {
+  width: 100%;
+  padding: 0 10px;
+  text-align: center;
+  padding-top: 10px;
+  font-family: "Forum", serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  color: var(--black);
+  border-bottom: 1px solid #c5c5c59c;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #c5c5c59c;
+  padding-bottom: 10px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .project-card-container:hover {
